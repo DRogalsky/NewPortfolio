@@ -1,28 +1,62 @@
 .large-header {
   position: relative;
   width: 100%;
-  background: #333;
+  background: #304269;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
   z-index: 1;
+  border-bottom: 1px solid #D9E8F5;
 }
 
 #myName {
-  color: red;
-  size: 6em;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  color: #f26101;
+  font-size: 6em;
+  font-family: "Quattrocento Sans", sans-serif;
   text-align: center;
   z-index: 10;
+  margin: 0 auto;
 }
 
-.demo-1 .main-title {
+.bold {
+  font-weight: bolder;
+}
+
+.boxed {
+  border: 10px solid #f26101;
+}
+
+.main-title {
   text-transform: uppercase;
   font-size: 4.2em;
   letter-spacing: 0.1em;
 }
 
+#profile {
+  float: left;
+  margin: 1em;
+}
+
+#aboutMe {
+  margin: 1em 300px;
+  margin-top: 2em;
+}
+#aboutMe p {
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
 h1 {
-  color: blue;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+hr {
+  border-top: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
