@@ -15,15 +15,55 @@
 <body>
     <header id="large-header" class="large-header">
         <!-- add an animated header? that looks cool -->
-
+        <h1 id="myName"><span class="boxed">Daniel</span> <span class="bold">Rogalsky</span></h1>
         <canvas id="animated_header" width="150" height="150"></canvas>
-        <h1 id="myName">Daniel Rogalsky</h1>
+        
     </header>
     <navbar>
         <!-- switch between about and portfolio -->
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
     </navbar>
-    <section id="portfolio">
+    <section id="portfolio" class="wrapper">
+        <h1>Portfolio</h1>
+        <hr>
+        <section id='pictures'>
+            <div class='projectHolder'>
+                <a href="https://edwardmara.github.io/Project1/login.html" target="_blank"><img src="assets/images/Locale Screenshot.png" class='projectPhoto' /></a>
+                <p>The Locale: an Excercise Game</p>
+                <a href="https://github.com/EdwardMara/Project1" target="_blank">Repository</a>
+            </div>
+            <div class='projectHolder'>
+                <a href="https://rush-ed.herokuapp.com/" target='_blank'><img src="assets/images/RushEd.png" class='projectPhoto' /></a>
+                <p>RushEd: A Career Researching Website</p>
+                <a href="https://github.com/cfpaige/rush-ed" target='_blank'>Repository</a>
+            </div>
+            <div class='projectHolder'>
+                <a href="https://edwardmara.github.io/WishyWashy/" target="_blank"><img src="assets/images/WishyWashy.png" class='projectPhoto' /></a>
+                <p>Wishy Washy: A Service Industry Gig App</p>
+                <a href="https://github.com/EdwardMara/WishyWashy" target="_blank">Repository </a>
+                <span>|</span>
+                <a href="https://github.com/DRogalsky/Wishywashybackend" target="_blank"> Back End Repository</a>
+            </div>
+            <div class='projectHolder'>
+                <a href="https://drogalsky.github.io/unit-4-game/" target="_blank"><img src="assets/images/Starwars game pic.png" class='projectPhoto' /></a>
+                <p>Star Wars game</p>
+                <a href="https://github.com/DRogalsky/unit-4-game" target="_blank">Repository</a>
+            </div>
+            <div class='projectHolder'>
+                <a href="https://drogalsky.github.io/Word-Guess-Game/" target="_blank"><img src="assets/images/Word Guess game pic.png" class='projectPhoto' /></a>
+                <p>Word Guessing Game</p>
+                <a href="https://github.com/DRogalsky/Word-Guess-Game" target="_blank">Repository</a>
+            </div>
 
+            <div class='projectHolder'>
+                <a href="https://github.com/DRogalsky/bam-shopping" target='_blank'><img src="assets/images/list.png" class='projectPhoto' /></a>
+                <p>Bam shopping</p>
+                <a href="https://github.com/DRogalsky/bam-shopping" target='_blank'>Repository</a>
+            </div>
+        </section>
     </section>
     <script src="./assets/scripts/TweenLite.min.js"></script>
     <script src="./assets/scripts/EasePack.min.js"></script>

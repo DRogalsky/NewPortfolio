@@ -35,9 +35,35 @@
   letter-spacing: 0.1em;
 }
 
+navbar {
+  width: 100%;
+}
+navbar ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+navbar ul li {
+  display: inline-block;
+  text-align: center;
+  flex-basis: 10%;
+}
+navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+navbar ul li a:hover {
+  text-decoration: underline;
+}
+navbar ul li a:active {
+  text-decoration: underline;
+}
+
 #profile {
   float: left;
   margin: 1em;
+  border-radius: 50%;
 }
 
 #aboutMe {
@@ -45,6 +71,33 @@
   margin-top: 2em;
 }
 #aboutMe p {
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+#aboutMe li {
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
+#portfolio {
+  margin: 1em 300px;
+  margin-top: 2em;
+}
+#portfolio p {
+  line-height: 1.5em;
+  font-size: 1.25em;
+}
+
+.clearProfile {
+  clear: left;
+  margin-left: 210px;
+}
+
+#contact {
+  margin: 1em 300px;
+  margin-top: 2em;
+}
+#contact p {
   line-height: 1.5em;
   font-size: 1.25em;
 }
@@ -57,6 +110,61 @@ h1 {
 
 hr {
   border-top: 1px solid black;
+}
+
+#pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectHolder {
+  margin: 1em;
+  display: inline-block;
+  flex: 1;
+}
+
+.projectPhoto {
+  border: 1px solid #D9E8F5;
+  border-radius: 4px;
+  padding: 1em;
+  width: 15em;
+}
+
+.links li {
+  margin: 1em;
+}
+.links li i {
+  margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 1025px) {
+  #aboutMe {
+    margin: 1em 100px;
+  }
+
+  #portfolio {
+    margin: 1em 100px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #myName {
+    top: 40%;
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #myName {
+    top: 30%;
+    line-height: 1.25em;
+  }
+
+  #aboutMe {
+    margin: 1em 0;
+  }
+
+  #portfolio {
+    margin: 1em 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -42,12 +42,68 @@ $background_color: #FFFFFF;
 	letter-spacing: 0.1em;
 }
 
+navbar {
+	width: 100%;
+	ul {
+		display: flex;
+		justify-content: center;
+		margin-top: 2em;
+		li {
+			display: inline-block;
+			text-align: center;
+			flex-basis: 10%;
+			a {
+				text-decoration: none;
+				color: black;
+				font-family: 'Quattrocento Sans', sans-serif;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			a:active {
+				text-decoration: underline;
+			}
+		}
+		
+	}
+}
+
 #profile {
 	float: left;
 	margin: 1em;
+	border-radius: 50%;
 }
 
 #aboutMe {
+	margin: 1em 300px;
+	margin-top: 2em;
+	p {
+		line-height: 1.5em;
+		font-size: 1.25em;
+	}
+	li {
+		line-height: 1.5em;
+		font-size: 1.25em;
+	}
+}
+
+#portfolio {
+	margin: 1em 300px;
+	margin-top: 2em;
+	p {
+		line-height: 1.5em;
+		font-size: 1.25em;
+	}
+}
+
+.clearProfile{
+	clear: left;
+	margin-left: 210px;
+}
+
+#contact {
 	margin: 1em 300px;
 	margin-top: 2em;
 	p {
@@ -65,3 +121,63 @@ h1 {
 hr {
 	border-top: 1px solid black;
 }
+
+#pictures {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projectHolder {
+    margin: 1em;
+	display: inline-block;
+	flex: 1;
+}
+
+.projectPhoto {
+    border: 1px solid $border-color; 
+    border-radius: 4px; 
+    padding: 1em; 
+    width: 15em; 
+}
+
+.links {
+    li {
+        margin: 1em;
+        i {
+            margin-left: 0.5em;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1025px) {
+    #aboutMe {
+		margin: 1em 100px;
+	}
+
+	#portfolio {
+		margin: 1em 100px;
+	}
+  }
+
+  @media only screen and (max-width: 950px) {
+	#myName {
+		top: 40%;
+		font-size: 4em;
+	}
+  }
+
+@media only screen and (max-width: 425px) {
+	#myName {
+		top: 30%;
+		line-height: 1.25em;	
+	}
+
+	#aboutMe {
+		margin: 1em 0;
+	}
+
+	#portfolio {
+		margin: 1em 0;
+	}
+  }
